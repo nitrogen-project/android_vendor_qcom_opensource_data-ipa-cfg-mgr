@@ -81,7 +81,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #define IPACM_PID_FILE "/data/misc/ipa/ipacm.pid"
 #define IPACM_DIR_NAME     "/data"
 #else/* defined(FEATURE_IPA_ANDROID) */
-#define IPACM_PID_FILE "/etc/ipacm.pid"
+#define IPACM_PID_FILE "/vendor/etc/ipacm.pid"
 #define IPACM_DIR_NAME     "/etc"
 #endif /* defined(NOT FEATURE_IPA_ANDROID)*/
 #define IPACM_NAME "ipacm"
