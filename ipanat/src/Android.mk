@@ -1,3 +1,5 @@
+ifneq ($(USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR),true)
+
 BOARD_PLATFORM_LIST := msm8909
 BOARD_PLATFORM_LIST += msm8916
 BOARD_PLATFORM_LIST += msm8917
@@ -32,5 +34,6 @@ LOCAL_CLANG := true
 include $(BUILD_SHARED_LIBRARY)
 
 endif # $(TARGET_ARCH)
+endif
 endif
 endif

@@ -1,3 +1,5 @@
+ifneq ($(USE_DEVICE_SPECIFIC_DATA_IPA_CFG_MGR),true)
+
 BOARD_PLATFORM_LIST := msm8909
 BOARD_PLATFORM_LIST += msm8916
 BOARD_PLATFORM_LIST += msm8917
@@ -109,5 +111,6 @@ LOCAL_MODULE_OWNER := ipacm
 include $(BUILD_PREBUILT)
 
 endif # $(TARGET_ARCH)
+endif
 endif
 endif
